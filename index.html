@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Random user genirator </title>
+  </head>
+  <body>
+
+<div id="app">
+<img :class="gender"  v-bind:src="picture"  />
+  <h1>Hello {{firstName}} {{lastName}} </h1>
+<h3>Email :{{email}}</h3>
+<button v-on:click = "getuser()" :class="gender"  type="button" name="button">Create random user</button>
+</div>
+<script src="app.js" ></script>
+
+  </body>
+</html>
